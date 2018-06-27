@@ -4,9 +4,10 @@ import Header from '@/components/header/header';
 import goods from '@/components/goods/goods';
 import ratings from '@/components/ratings/ratings';
 import seller from '@/components/seller/seller';
+
 Vue.use(Router);
 export default new Router({
-  linkActiveClass: 'list-active',
+  linkActiveClass: 'active',
   routes: [
     {
       path: '/header',
