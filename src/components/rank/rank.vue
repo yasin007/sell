@@ -1,6 +1,6 @@
 <template>
-  <div id="goods">
-    我是ratings
+  <div id="app">
+    nihao
   </div>
 </template>
 

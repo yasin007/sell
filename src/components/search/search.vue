@@ -1,6 +1,5 @@
 <template>
-  <div id="goods">
-    我是seller
+  <div id="app">
   </div>
 </template>
 

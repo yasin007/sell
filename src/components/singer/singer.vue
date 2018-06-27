@@ -1,9 +1,10 @@
 <template>
-  <div class="header">
-    i am header
+  <div id="app">
   </div>
 </template>
-<script></script>
+
+<script type="text/ecmascript-6">
+</script>
 
 <style lang="stylus" rel="stylesheet/stylus">
 

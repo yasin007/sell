@@ -1,33 +1,32 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Header from '@/components/header/header';
-import goods from '@/components/goods/goods';
-import ratings from '@/components/ratings/ratings';
-import seller from '@/components/seller/seller';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Recommend from 'components/recommend/recommend'
+import Singer from 'components/singer/singer'
+import Rank from 'components/rank/rank'
+import Search from 'components/search/search'
 
-Vue.use(Router);
+Vue.use(Router)
 export default new Router({
-  linkActiveClass: 'active',
   routes: [
     {
-      path: '/header',
-      name: 'header',
-      component: Header
+      path: '/',
+      redirect: '/recommend'
     },
     {
-      path: '/goods',
-      name: goods,
-      component: goods
+      path: '/recommend',
+      component: Recommend
     },
     {
-      path: '/ratings',
-      name: ratings,
-      component: ratings
+      path: '/singer',
+      component: Singer
     },
     {
-      path: '/seller',
-      name: seller,
-      component: seller
+      path: '/rank',
+      component: Rank
+    },
+    {
+      path: '/search',
+      component: Search
     }
   ]
-});
+})

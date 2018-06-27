@@ -1,49 +1,16 @@
 <template>
-  <div>
-    <v-header></v-header>
-    <div class="tab">
-      <div class="tab-item">
-        <router-link to="/goods">商品</router-link>
-      </div>
-      <div class="tab-item">
-        <router-link to="/ratings">评论</router-link>
-      </div>
-      <div class="tab-item">
-        <router-link to="/seller">商家</router-link>
-      </div>
-    </div>
+  <div id="app">
+    <m-header></m-header>
+    <tab></tab>
     <router-view></router-view>
   </div>
 </template>
-<script>
-  import header from './components/header/header'
+<script type="text/ecmascript-6">
+  import MHeader from 'components/m-header/m-header'
+  import Tab from 'components/tab/tab'
 
-  export default {
-    components: {
-      'v-header': header
-    }
-  }
+  export default {components: {MHeader, Tab}}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .tab {
-    display: flex
-    widh: 100%
-    height: 40px
-    line-height: 40px
-    border-bottom: 1px solid rgba(7, 17, 27, 0.1)
-  }
-
-  .tab-item {
-    flex: 1
-    text-align: center
-    & > a {
-      display: block
-      font-size: 14px
-      color: rgb(77, 85, 93)
-      &.active {
-        color: rgb(240, 20, 20)
-      }
-    }
-  }
 </style>
