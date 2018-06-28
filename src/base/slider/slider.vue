@@ -110,6 +110,9 @@
           this.slider.goToPage(pageIndex, 0, 400)
         }, this.interval)
       }
+    },
+    deactivated() {
+      clearTimeout(this.timer)
     }
   }
 </script>
