@@ -26,7 +26,7 @@ module.exports = {
       'components': resolve('src/components'),
       'base': resolve('src/base'),
       'api': resolve('src/api'),
-      'vue$': 'vue/dist/vue.js',
+      'vue$': 'vue/dist/vue.js'
     }
   },
   module: {
